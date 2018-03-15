@@ -2,9 +2,19 @@
 
 const createEnumerableProperty = () => {};
 const createNotEnumerableProperty = () => {};
-const createProtoMagicObject = () => {};
-const incrementor = () => {};
-const asyncIncrementor = () => {};
+const createProtoMagicObject = () => {
+	
+};
+
+const incrementor = () => {
+	
+};
+var async = 0;
+const asyncIncrementor = () => {
+	return promise = new Promise((resolve) => {
+		resolve(++async);
+	})
+};
 const createIncrementer = () => {};
 
 // return same argument not earlier than in one second, and not later, than in two
